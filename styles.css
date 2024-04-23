@@ -1,0 +1,139 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --sky-blue: #99c9ff;
+  --yellow-orange: #feac32;
+  --light-gray: #dfdfe2;
+  --dark-blue: #0a0a23;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--light-gray);
+  width: 100vw;
+  height: 100vh;
+  font-family: Courier, serif;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 30px 0;
+}
+
+.change-due {
+  border: 2px solid var(--yellow-orange);
+  border-radius: 10px;
+  padding: 15px 25px;
+}
+
+.input-div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.input-div input {
+  width: 180px;
+  height: 35px;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 15px;
+}
+
+.input-div button {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--dark-blue);
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border: 2px solid var(--yellow-orange);
+}
+
+.price-screen {
+  border: 10px solid var(--sky-blue);
+  width: 220px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.connector {
+  background-color: var(--sky-blue);
+  width: 40px;
+  height: 30px;
+  margin-left: -100px;
+}
+
+.top-register {
+  background-color: var(--sky-blue);
+  border-radius: 35px 35px 0 0;
+  width: 325px;
+  height: 250px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.btns-group {
+  width: 25%;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.btn {
+  background-color: var(--black);
+  width: 20px;
+  height: 20px;
+  border-radius: 10%;
+  border: 0;
+}
+
+.cash-drawer {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  font-size: 1rem;
+  height: 100%;
+  padding: 10px;
+}
+
+.bottom-register {
+  background-color: var(--sky-blue);
+  width: 325px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.circle {
+  background-color: var(--black);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 15px auto;
+}
+
+.hidden {
+  display: none;
+}
